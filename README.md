@@ -10,10 +10,11 @@ An environment supporting ES6 (ES2015) or newer.
 
 ### Server
 - NodeJS v8+
+- A runtime ES6 module loader, such as [esm](https://www.npmjs.com/package/esm) or a compile step via Babel, Webpack etc.
 
 ### Browser
-- Webpack or similar bundler supporting ES6
 - Chrome, Firefox, Safari, Edge (only tested against latest versions, mobile is supported)
+- Webpack or similar bundler that supports ES6
 - IE11 is NOT officially supported, but some modules might work, provided they are transpiled to ES5 with appropriate polyfills
 
 ## Getting started
