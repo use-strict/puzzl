@@ -43,7 +43,7 @@ More advanced examples can be found in [packages/example/src](packages/example/s
 
 ## Versioning
 
-Puzzle respects [https://semver.org/](semver).
+Puzzle respects [semver](https://semver.org/).
 
 ## TypeScript support
 
