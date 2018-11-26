@@ -57,7 +57,7 @@ export class Task<TResult> {
     }
 
     /** Cancel a running task */
-    async cancel() {
+    cancel() {
         if (this.status === TaskStatus.InProgress) {
             this.tokenSource.cancel();
         }
