@@ -1,18 +1,18 @@
 {
-  "name": "@puzzle/browser",
+  "name": "@puzzl/browser",
   "version": "1.0.0-beta",
-  "description": "Puzzle JavaScript library - browser module",
+  "description": "Puzzl JavaScript library - browser module",
   "scripts": {
     "prepublishOnly": "tsc -b ."
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/use-strict/puzzle.git"
+    "url": "https://github.com/use-strict/puzzl.git"
   },
   "author": "Alexandru Ciuca <gmail.rulz@yahoo.com>",
   "license": "MIT",
   "dependencies": {
-    "@puzzle/core": "^1.0.0-beta"
+    "@puzzl/core": "^1.0.0-beta"
   },
   "publishConfig": {
     "access": "public"

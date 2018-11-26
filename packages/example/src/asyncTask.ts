@@ -1,6 +1,6 @@
-import { sleep } from "@puzzle/core/lib/async/sleep";
-import { Task } from "@puzzle/core/lib/async/Task";
-import { CancellationToken, OperationCanceledError } from "@puzzle/core/lib/async/cancellation";
+import { sleep } from "@puzzl/core/lib/async/sleep";
+import { Task } from "@puzzl/core/lib/async/Task";
+import { CancellationToken, OperationCanceledError } from "@puzzl/core/lib/async/cancellation";
 
 interface IBlogPost {
     author: string;

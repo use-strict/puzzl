@@ -1,6 +1,6 @@
-# Puzzle
+# Puzzl
 
-Puzzle is a modular JavaScript library, usable in both browser and server environments (ES6+).
+Puzzl is a modular JavaScript library, usable in both browser and server environments (ES6+).
 
 The main goal is to fill-in some gaps created by the lack of a "standard" JS library. It provides features ranging from basic algorithms and primitives to complex design patterns.
 
@@ -21,16 +21,16 @@ An environment supporting ES6 (ES2015) or newer.
 ### Installation
 
 #### Core library:
-> `npm install @puzzle/core --save-dev`
+> `npm install @puzzl/core --save-dev`
 #### Browser library:
-> `npm install @puzzle/browser --save-dev`
+> `npm install @puzzl/browser --save-dev`
 
 ### Usage
 
-Puzzle doesn't provide a main export, but instead exposes ES6 modules in a structured folder tree. Everything is public and can be imported directly, unless it is marked as `@internal` with a doc-block or the filename contains the keyword `internal`.
+Puzzl doesn't provide a main export, but instead exposes ES6 modules in a structured folder tree. Everything is public and can be imported directly, unless it is marked as `@internal` with a doc-block or the filename contains the keyword `internal`.
 
 ```ts
-import { capitalize } from "@puzzle/core/lib/string";
+import { capitalize } from "@puzzl/core/lib/string";
 
 console.log(capitalize("john")); // John
 ```
@@ -43,8 +43,8 @@ More advanced examples can be found in [packages/example/src](packages/example/s
 
 ## Versioning
 
-Puzzle respects [semver](https://semver.org/).
+Puzzl respects [semver](https://semver.org/).
 
 ## TypeScript support
 
-Puzzle is a first-class (pun intended) TypeScript citizen.
+Puzzl is a first-class (pun intended) TypeScript citizen.

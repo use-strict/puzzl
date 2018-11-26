@@ -1,14 +1,14 @@
 {
-  "name": "@puzzle/build",
+  "name": "@puzzl/build",
   "private": true,
   "version": "1.0.0",
   "description": "Manages build",
   "scripts": {
     "install": "npm run bootstrap",
     "bootstrap": "lerna bootstrap",
-    "clean": "rimraf ./packages/puzzle/*/lib",
-    "build": "npm run clean && tsc -b packages/puzzle",
-    "watch": "tsc -b packages/puzzle -w",
+    "clean": "rimraf ./packages/puzzl/*/lib",
+    "build": "npm run clean && tsc -b packages/puzzl",
+    "watch": "tsc -b packages/puzzl -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

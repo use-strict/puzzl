@@ -1,4 +1,4 @@
-import { CancellationToken, OperationCanceledError } from "@puzzle/core/lib/async/cancellation";
+import { CancellationToken, OperationCanceledError } from "@puzzl/core/lib/async/cancellation";
 
 /**
  * Animated scroll using Element#scrollTop and requestAnimationFrame

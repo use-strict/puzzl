@@ -1,4 +1,4 @@
-import { EventDispatcher } from "@puzzle/core/lib/event/EventDispatcher";
+import { EventDispatcher } from "@puzzl/core/lib/event/EventDispatcher";
 
 /**
  * A class that emits an event every second with the current timestamp

@@ -1,5 +1,5 @@
-import { sleep } from "@puzzle/core/lib/async/sleep";
-import { CancellationTokenSource, CancellationToken, OperationCanceledError } from "@puzzle/core/lib/async/cancellation";
+import { sleep } from "@puzzl/core/lib/async/sleep";
+import { CancellationTokenSource, CancellationToken, OperationCanceledError } from "@puzzl/core/lib/async/cancellation";
 
 class AsyncCancellationApp {
     async main() {

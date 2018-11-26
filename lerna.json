@@ -1,6 +1,6 @@
 {
   "packages": [
-    "packages/puzzle/*",
+    "packages/puzzl/*",
     "packages/example"
   ],
   "version": "independent"

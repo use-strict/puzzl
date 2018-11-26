@@ -1,13 +1,13 @@
 {
-  "name": "@puzzle/core",
+  "name": "@puzzl/core",
   "version": "1.0.0-beta",
-  "description": "Puzzle JavaScript library - core module",
+  "description": "Puzzl JavaScript library - core module",
   "scripts": {
     "prepublishOnly": "tsc -b ."
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/use-strict/puzzle.git"
+    "url": "https://github.com/use-strict/puzzl.git"
   },
   "author": "Alexandru Ciuca <gmail.rulz@yahoo.com>",
   "license": "MIT",
