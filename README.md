@@ -6,24 +6,22 @@ The main goal is to fill-in some gaps created by the lack of a "standard" JS lib
 
 ## Prerequisites
 
-An environment supporting ES6 (ES2015) or newer.
-
-### Server
-- NodeJS v8+
-- A runtime ES6 module loader, such as [esm](https://www.npmjs.com/package/esm) or a compile step via Babel, Webpack etc.
-
-### Browser
+### Browser (_`@puzzl/core`, `@puzzl/browser`_)
 - Chrome, Firefox, Safari, Edge (only tested against latest versions, mobile is supported)
-- Webpack or similar bundler that supports ES6
-- IE11 is NOT officially supported, but some modules might work, provided they are transpiled to ES5 with appropriate polyfills
+- Webpack or similar bundler that consumes ES6 modules
+- IE11 is NOT officially supported, but some modules might work, if transpiled to ES5 with appropriate polyfills. Use at own risk.
+
+### Server (_`@puzzl/core`_)
+- NodeJS v8+
+- _Optional_: A runtime ES6 module loader, such as [esm](https://www.npmjs.com/package/esm) or a compile step via Babel, Webpack etc. As a fallback, a CommonJS-compatible build is provided (See [usage](#usage) below).
 
 ## Getting started
 
 ### Installation
 
-#### Core library:
+#### Core library
 > `npm install @puzzl/core --save-dev`
-#### Browser library:
+#### Browser library
 > `npm install @puzzl/browser --save-dev`
 
 ### Usage
@@ -34,6 +32,13 @@ Puzzl doesn't provide a main export, but instead exposes ES6 modules in a struct
 import { capitalize } from "@puzzl/core/lib/string";
 
 console.log(capitalize("john")); // John
+```
+
+#### CommonJS compatibility (_`@puzzl/core`_)
+Just import from `cjs/` instead of `lib/`:
+
+```ts
+import { capitalize } from "@puzzl/core/cjs/string";
 ```
 
 ## Documentation

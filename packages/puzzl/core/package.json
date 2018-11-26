@@ -3,7 +3,7 @@
   "version": "1.0.0-beta.0",
   "description": "Puzzl JavaScript library - core module",
   "scripts": {
-    "prepublishOnly": "tsc -b ."
+    "prepublishOnly": "tsc -b . && tsc -b ./tsconfig.cjs.json"
   },
   "repository": {
     "type": "git",
