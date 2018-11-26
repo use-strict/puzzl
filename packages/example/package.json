@@ -1,7 +1,7 @@
 {
   "name": "@puzzl/example",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.0-beta",
   "description": "Examples for Puzzl library",
   "author": "Alexandru Ciuca <gmail.rulz@yahoo.com>",
   "license": "MIT",
