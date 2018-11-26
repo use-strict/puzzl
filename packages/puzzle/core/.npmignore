@@ -1,0 +1,3 @@
+# tsconfig is excluded because otherwise VSCode will find references in this package from the consuming project
+tsconfig.json
+tsconfig.base.json

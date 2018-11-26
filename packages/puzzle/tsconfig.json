@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+    },
+    "files": [
+
+    ],
+    "references": [
+        { "path": "core" },
+        { "path": "browser" }
+    ]
+}

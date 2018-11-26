@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "packages/puzzle/*",
+    "packages/example"
+  ],
+  "version": "independent"
+}

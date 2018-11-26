@@ -1,0 +1,11 @@
+{
+  "name": "@puzzle/example",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Examples for puzzle library",
+  "author": "Alexandru Ciuca <gmail.rulz@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@puzzle/core": "^1.0.0-beta"
+  }
+}

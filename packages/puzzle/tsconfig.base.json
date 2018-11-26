@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "strict": true,
+        "noImplicitReturns": true,
+        "declaration": true,
+        "stripInternal": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "composite": true
+    }
+}
