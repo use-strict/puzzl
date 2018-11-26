@@ -1,11 +1,11 @@
 {
   "name": "@puzzl/example",
   "private": true,
-  "version": "1.0.0-beta",
+  "version": "1.0.0-beta.0",
   "description": "Examples for Puzzl library",
   "author": "Alexandru Ciuca <gmail.rulz@yahoo.com>",
   "license": "MIT",
   "dependencies": {
-    "@puzzl/core": "^1.0.0-beta"
+    "@puzzl/core": "^1.0.0-beta.0"
   }
 }
