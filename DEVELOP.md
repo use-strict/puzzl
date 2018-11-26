@@ -16,6 +16,10 @@ or
 
 You can also build within VSCode with the default build command.
 
+## Publishing
+
+> `$ npx lerna publish`
+
 ## Design principles and guidelines
 
 ### Architecture
