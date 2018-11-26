@@ -1,6 +1,6 @@
 {
   "name": "@puzzl/browser",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "Puzzl JavaScript library - browser module",
   "scripts": {
     "prepublishOnly": "tsc -b ."
@@ -12,7 +12,7 @@
   "author": "Alexandru Ciuca <gmail.rulz@yahoo.com>",
   "license": "MIT",
   "dependencies": {
-    "@puzzl/core": "^1.0.0-beta.0"
+    "@puzzl/core": "^1.0.0-beta.1"
   },
   "publishConfig": {
     "access": "public"

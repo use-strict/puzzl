@@ -1,6 +1,6 @@
 {
   "name": "@puzzl/core",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "Puzzl JavaScript library - core module",
   "scripts": {
     "prepublishOnly": "tsc -b . && tsc -b ./tsconfig.cjs.json"
