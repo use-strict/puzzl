@@ -12,6 +12,7 @@ export interface IHttpRequestOptions {
      * Specifies what type of data the 'data' property contains (default Json)
      */
     dataType?: DataType;
+    headers?: Record<string, string>;
 }
 
 export enum DataType {
@@ -81,6 +82,13 @@ export class HttpRequest {
                     } else {
                         data = options.data;
                     }
+                }
+
+                const headers = options.headers;
+                if (headers) {
+                    Object.keys(headers).forEach(headerName => {
+                        request.setRequestHeader(headerName, headers[headerName]);
+                    });
                 }
             }
 
