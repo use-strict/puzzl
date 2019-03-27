@@ -3,5 +3,10 @@
     "packages/puzzl/*",
     "packages/example"
   ],
-  "version": "independent"
+  "version": "independent",
+  "command": {
+    "publish": {
+      "ignoreChanges": ["*.md"]
+    }
+  }
 }
