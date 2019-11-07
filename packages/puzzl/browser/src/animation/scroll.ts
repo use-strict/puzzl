@@ -10,7 +10,7 @@ export function scrollElementToY(element: HTMLElement, newScrollTop: number, dur
         getScrollY: () => element.scrollTop,
         scrollToY: (offset) => element.scrollTop = offset
     };
-    scrollToY(scrollTarget, newScrollTop, durationMillis, cancellationToken);
+    return scrollToY(scrollTarget, newScrollTop, durationMillis, cancellationToken);
 }
 
 
@@ -24,7 +24,7 @@ export function scrollWindowToY(window: Window, newScrollTop: number, durationMi
         getScrollY: () => window.scrollY,
         scrollToY: (offset) => window.scrollTo(window.scrollX, offset)
     }
-    scrollToY(scrollTarget, newScrollTop, durationMillis, cancellationToken);
+    return scrollToY(scrollTarget, newScrollTop, durationMillis, cancellationToken);
 }
 
 interface IScrollTarget {

@@ -1,3 +1,7 @@
+# v1.0.0-beta.4
+
+- (animation/scroll): Fix missing return
+
 # v1.0.0-beta.3
 
 - (animation/scroll): Add scrollWindowToY method
