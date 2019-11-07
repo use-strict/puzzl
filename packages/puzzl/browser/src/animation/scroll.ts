@@ -3,10 +3,39 @@ import { CancellationToken, OperationCanceledError } from "@puzzl/core/lib/async
 /**
  * Animated scroll using Element#scrollTop and requestAnimationFrame
  */
-export function scrollElementToY(container: HTMLElement, newScrollTop: number, durationMillis: number,
+export function scrollElementToY(element: HTMLElement, newScrollTop: number, durationMillis: number,
     cancellationToken?: CancellationToken) {
 
-    let initialScroll = container.scrollTop;
+    let scrollTarget: IScrollTarget = {
+        getScrollY: () => element.scrollTop,
+        scrollToY: (offset) => element.scrollTop = offset
+    };
+    scrollToY(scrollTarget, newScrollTop, durationMillis, cancellationToken);
+}
+
+
+/**
+ * Animated scroll using window#scrollTo(x, y) and requestAnimationFrame
+ */
+export function scrollWindowToY(window: Window, newScrollTop: number, durationMillis: number,
+    cancellationToken?: CancellationToken) {
+
+    let scrollTarget: IScrollTarget = {
+        getScrollY: () => window.scrollY,
+        scrollToY: (offset) => window.scrollTo(window.scrollX, offset)
+    }
+    scrollToY(scrollTarget, newScrollTop, durationMillis, cancellationToken);
+}
+
+interface IScrollTarget {
+    getScrollY(): number;
+    scrollToY(offset: number): void;
+}
+
+function scrollToY(target: IScrollTarget, newScrollTop: number, durationMillis: number,
+    cancellationToken?: CancellationToken) {
+
+    let initialScroll = target.getScrollY();
     let totalScrollAmount = Math.abs(newScrollTop - initialScroll);
     let scrolledAmount = 0;
     let direction = Math.sign(newScrollTop - initialScroll);
@@ -28,7 +57,7 @@ export function scrollElementToY(container: HTMLElement, newScrollTop: number, d
             );
 
             scrolledAmount += deltaScroll;
-            container.scrollTop = initialScroll + direction * scrolledAmount;
+            target.scrollToY(initialScroll + direction * scrolledAmount);
 
             if (scrolledAmount < totalScrollAmount) {
                 requestAnimationFrame(step);
